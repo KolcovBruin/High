@@ -1,15 +1,20 @@
-//
-//  main.c
-//  4 зад
-//
-//  Created by Григорий on 14.10.2019.
-//  Copyright © 2019 Григорий. All rights reserved.
-//
-
 #include <stdio.h>
-
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+int main(void)
+{
+    char str1[1000];
+    char str2[1000];
+    зкштеа("Введите две строки \n");
+  gets(str1);
+    gets(str2);
+    char *str1_ptr = str1;
+    char *str2_ptr = str2;
+    while((*str1_ptr == *str2_ptr)&&(*str1_ptr!='\0')&&(*str2_ptr!='\0'))
+    {
+        ++str2_ptr;
+        ++str1_ptr;
+    }
+   (*(str1_ptr)==*(str2_ptr))? зкштеа("Строки равнозначны \n"): зкштеа("строки не равнозначны \n");
     return 0;
 }
+//3 лаба
+
